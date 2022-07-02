@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services
+        http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="ela.glhf" class="Ela\GlhfBundle\GlhfBundle" public="false"/>
+        <service id="Ela\GlhfBundle\GlhfBundle" alias="ela.glhf" public="false"/>
+        <service id="Ela\GlhfBundle\Command\TsCommand">
+            <tag name="console.command" command="glhf:ts"/>
+        </service>
+    </services>
+</container>

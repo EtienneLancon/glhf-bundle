@@ -1,0 +1,9 @@
+services:
+    # Compact syntax
+    ts_command:
+        class: Ela\GlhfBundle\Command\TsCommand
+        tags: ['console.command']
+
+    glhf:
+        class: Ela\GlhfBundle\GlhfBundle
+        tags: ['glhf.bundle']

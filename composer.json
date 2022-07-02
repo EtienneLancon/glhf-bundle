@@ -1,0 +1,21 @@
+{
+    "name": "ela/glhf-bundle",
+    "description": "Read Doctrine entities and write front languages classes and interfaces",
+    "type": "symfony-bundle",
+    "require": {
+        "php": ">=7.4",
+        "symfony/framework-bundle": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ela\\GlhfBundle\\": "/var/dev/php/symfony/glhf/src/Ela/GlhfBundle/src"
+        }
+    },  
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Etienne Lançon",
+            "email": "lancon.etienne@protonmail.com"
+        }
+    ]
+}
